@@ -1,0 +1,17 @@
+<h1>List of URL's</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>URL</th>
+  </tr>
+
+  <% @websites.each do |website| %>
+    <tr>
+      <td><%= website.id %></td>
+      <td><%= website.url %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to 'New URL', '/websites/new' %></p>
